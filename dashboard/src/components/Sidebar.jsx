@@ -16,9 +16,11 @@ const Sidebar = () => {
 
   const { isAuthenticated, setIsAuthenticated } = useContext(Context);
 
+
+  //"http://localhost:4000/api/v1/user/admin/logout"
   const handleLogout = async () => {
     await axios
-      .get("http://localhost:4000/api/v1/user/admin/logout", {
+      .get("https://doctor-appointment-service-backend.onrender.com/api/v1/user/admin/logout", {
         withCredentials: true,
       })
       .then((res) => {
