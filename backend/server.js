@@ -16,7 +16,8 @@ cloudinary.v2.config({
 
 // Use CORS middleware
 app.use(cors({
-  origin: 'http://localhost:5174', // Update with your frontend URL
+  origin: 'https://doctor-appointment-service-frontend.onrender.com',
+  // origin: 'http://localhost:5174', // Update with your frontend URL
   credentials: true // Allow cookies and other credentials
 }));
 
